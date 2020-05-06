@@ -1,13 +1,11 @@
 import React from 'react';
 
 function DrawingLine(props) {
-    const pathData = "M " +
-      props.line
-        .map(p => {
+    const pathData = "M " + 
+      props.line.map(p => {
           return `${p.get('x')} ${p.get('y')}`;
         })
-        .join(" L ");
-  
+        .join(" L ") ;
     return <path className="path" d={pathData} />;
   }
 
