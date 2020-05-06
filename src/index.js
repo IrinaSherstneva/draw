@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DrawArea from './components/DrawArea'
+import App from './components/App'
 import './styles.css';
 
 
-ReactDOM.render(<DrawArea />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
