@@ -1,12 +1,12 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 40px 0 40px 40px;
+    margin: 40px 0 40px 30px;
     background-color: pink;
     background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
   }
 
   .colorPicker{
-    display: inline-block;
+    display: block;
      background-color: rgb(250, 211, 211);
      border: 3px solid white;
      padding: 20px;
@@ -16,12 +16,23 @@ body {
   .drawArea {
     width: 1050px;
     height: 600px;
-    /* border: 1px solid black; */
     border: 5px solid #ddd;
     float: left;
     cursor: crosshair;
     
     background-color: #f1f2f6;
+  }
+  .fullPicker{
+    margin:30px 15px 10px 10px;
+  }
+
+  .palette{
+    background-color: #ddd;
+    border: none;
+     width: 76px;
+    height: 36px; 
+    cursor: pointer;
+    outline: none;
   }
   
   .path {
@@ -35,4 +46,12 @@ body {
   .drawing {
     width: 100%;
     height: 100%;
+  }
+  .tools{
+      float: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;   
+    align-items: center; 
+    /* flex:1; */
   }
